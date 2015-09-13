@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mesh.csrmesh.view.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LightBulbActivity">
+
+    <mesh.csrmesh.view.PercentRelativeLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@drawable/head_bottom_line">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_paddingRightPercent="5%w"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="LIGHT BULB"
+            app:layout_widthPercent="50%"
+            app:textSizePercent="40%h"/>
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/add"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_paddingRightPercent="5%w"/>
+
+    </mesh.csrmesh.view.PercentRelativeLayout>
+
+
+    <mesh.csrmesh.view.PercentRelativeLayout
+        android:id="@+id/lightbottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nav_menutop_line">
+
+        <mesh.csrmesh.view.PercentLinearLayout
+            android:id="@+id/navmenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/induvidual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="INDUVIDUAL"
+                app:layout_widthPercent="50%w"
+                app:textSizePercent="40%h"/>
+
+            <TextView
+                android:id="@+id/group"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="GROUP"
+                app:layout_widthPercent="50%w"
+                app:textSizePercent="40%h"/>
+        </mesh.csrmesh.view.PercentLinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/navmenu"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="50%"/>
+    </mesh.csrmesh.view.PercentRelativeLayout>
+
+    <mesh.csrmesh.view.NoScrollViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lightbottom"
+        android:layout_below="@id/nav"/>
+</mesh.csrmesh.view.PercentRelativeLayout>

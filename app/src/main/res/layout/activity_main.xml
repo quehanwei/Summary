@@ -1,0 +1,43 @@
+<mesh.csrmesh.view.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <mesh.csrmesh.view.PercentRelativeLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home_bottom_line"
+            android:gravity="center"
+            android:text="HOME"
+            app:layout_widthPercent="33%"
+            app:textSizePercent="40%h"/>
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/setting"
+            app:layout_paddingLeftPercent="4%w"
+            app:layout_paddingRightPercent="4%w"/>
+    </mesh.csrmesh.view.PercentRelativeLayout>
+
+    <mesh.csrmesh.view.MeshTextView
+        android:id="@+id/homemesh"
+        android:layout_below="@id/nav"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        app:layout_marginBottomPercent="25%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="76%"/>
+</mesh.csrmesh.view.PercentRelativeLayout>

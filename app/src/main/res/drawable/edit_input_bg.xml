@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border color value -->
+    <item>
+        <shape>
+            <solid android:color="@color/primary_text_default_material_dark"/>
+        </shape>
+    </item>
+    <!-- Subject background color value -->
+    <item>
+        <shape>
+            <stroke
+                android:width="1px"
+                android:color="@color/ripple_material_dark"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border color value -->
+    <item>
+        <shape>
+            <solid android:color="@color/material_deep_teal_500" />
+        </shape>
+    </item>
+    <!-- Subject background color value -->
+    <item android:bottom="2dp">
+        <shape>
+            <solid android:color="@color/background_floating_material_light" />
+        </shape>
+    </item>
+</layer-list>

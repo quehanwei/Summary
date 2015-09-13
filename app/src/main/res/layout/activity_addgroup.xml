@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mesh.csrmesh.view.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGroupActivity">
+
+    <mesh.csrmesh.view.PercentRelativeLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@drawable/head_bottom_line">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_paddingRightPercent="5%w"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="ADD GROUP"
+            app:layout_widthPercent="50%"
+            app:textSizePercent="40%h"/>
+    </mesh.csrmesh.view.PercentRelativeLayout>
+
+    <mesh.csrmesh.view.EditTextWithDel
+        android:id="@+id/groupname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_below="@id/nav"
+        android:background="@drawable/edit_input_bg"
+        android:hint="plase group name"
+        android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+        android:singleLine="true"
+        app:layout_marginTopPercent="6%h"/>
+
+    <mesh.csrmesh.view.PercentRelativeLayout
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_below="@id/groupname"
+        android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+        app:layout_marginTopPercent="6%h">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Type"
+            app:textSizePercent="36%h"/>
+
+        <TextView
+            android:id="@+id/grouptype"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/abc_dropdownitem_text_padding_left"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center"
+            android:text="Light Bulb"
+            app:textSizePercent="36%h"/>
+    </mesh.csrmesh.view.PercentRelativeLayout>
+
+    <mesh.csrmesh.view.PercentRelativeLayout
+        android:id="@+id/connection"
+        android:layout_below="@id/type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:paddingRight="@dimen/abc_dropdownitem_text_padding_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Connection"
+            app:textSizePercent="36%h"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/go"
+            android:gravity="center"
+            android:drawablePadding="@dimen/abc_dropdownitem_text_padding_left"
+            android:text="Mesh"
+            app:textSizePercent="36%h"/>
+    </mesh.csrmesh.view.PercentRelativeLayout>
+
+
+    <mesh.csrmesh.view.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="15%">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="CANCEL"
+            app:layout_heightPercent="50%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="36%"
+            app:textSizePercent="20%h"/>
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="DONE"
+            app:layout_heightPercent="50%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginTopPercent="20%"
+            app:layout_widthPercent="36%"
+            app:textSizePercent="20%h"/>
+    </mesh.csrmesh.view.PercentRelativeLayout>
+
+</mesh.csrmesh.view.PercentRelativeLayout>

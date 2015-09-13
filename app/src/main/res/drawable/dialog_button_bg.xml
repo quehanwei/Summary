@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false">
+        <shape>
+            <solid android:color="@color/highlighted_text_material_dark"/>
+            <corners android:radius="16px"/>
+            <stroke android:width="@dimen/abc_dialog_list_padding_vertical_material" android:color="#D7D7D7"/>
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/highlighted_text_material_dark"/>
+            <corners android:radius="16px"/>
+            <stroke android:width="@dimen/abc_dialog_list_padding_vertical_material" android:color="#D7D7D7"/>
+        </shape>
+    </item>
+
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape>
+            <solid android:color="#C1C1C1"/>
+            <corners android:radius="16px"/>
+            <stroke android:width="@dimen/abc_dialog_list_padding_vertical_material" android:color="#D7D7D7"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="#C1C1C1"/>
+            <corners android:radius="16px"/>
+            <stroke android:width="@dimen/abc_dialog_list_padding_vertical_material" android:color="#D7D7D7"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="#C1C1C1"/>
+            <corners android:radius="16px"/>
+            <stroke android:width="@dimen/abc_dialog_list_padding_vertical_material" android:color="#D7D7D7"/>
+        </shape>
+    </item>
+</selector>

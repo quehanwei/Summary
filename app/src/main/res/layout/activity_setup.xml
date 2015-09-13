@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mesh.csrmesh.view.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetUpActivity">
+
+    <mesh.csrmesh.view.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@drawable/head_bottom_line">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="SETUP"
+            app:layout_widthPercent="33%"
+            app:textSizePercent="40%h"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            app:layout_paddingLeftPercent="3%w"
+            app:layout_paddingRightPercent="3%w"/>
+    </mesh.csrmesh.view.PercentRelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="16dp"
+        android:background="#EEEEEE"
+        android:textSize="@dimen/abc_text_size_caption_material"
+        android:gravity="center_vertical"
+        android:text="System"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@drawable/setup_bottom_line"
+        android:drawableRight="@mipmap/go"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="Select Bridge"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@drawable/setup_bottom_line"
+        android:drawableRight="@mipmap/go"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+        android:text="Select Bridge"
+        android:textSize="@dimen/abc_text_size_medium_material"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@drawable/setup_bottom_line"
+        android:drawableRight="@mipmap/go"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+        android:text="Set Password"
+        android:textSize="@dimen/abc_text_size_medium_material"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@drawable/setup_bottom_line"
+        android:drawableRight="@mipmap/go"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+        android:text="System Settings"
+        android:textSize="@dimen/abc_text_size_medium_material"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@drawable/setup_bottom_line"
+        android:drawableRight="@mipmap/go"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+        android:paddingRight="@dimen/abc_dropdownitem_text_padding_right"
+        android:text="Database Manager"
+        android:textSize="@dimen/abc_text_size_medium_material"/>
+
+</mesh.csrmesh.view.PercentLinearLayout>
